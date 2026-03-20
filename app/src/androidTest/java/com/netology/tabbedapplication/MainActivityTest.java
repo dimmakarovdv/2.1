@@ -26,7 +26,6 @@ public class MainActivityTest {
     public void mainActivityTest() throws Exception {
         onView(withText("Page: 1")).check(matches(isDisplayed()));
         onView(withText("TAB 2")).perform(click());
-        Thread.sleep(500);
         onView(withText("Page: 2")).check(matches(isDisplayed()));
     }
 }
